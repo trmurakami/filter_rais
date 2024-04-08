@@ -1,0 +1,139 @@
+trim('Ano Chegada Brasil')
+trim('Bairros Fortaleza')
+trim('Bairros RJ')
+trim('Bairros SP')
+
+lookup('CNAE 95 Classe',"cnae.csv",sep_char:",")
+
+trim('CNAE 2.0 Subclasse')
+lookup('CNAE 2.0 Subclasse',"cnae_subclasse.csv",sep_char:":")
+
+lookup('Causa Afastamento 1',"causa_afastamento_1.csv",sep_char:",")
+lookup('Causa Afastamento 2',"causa_afastamento_1.csv",sep_char:",")
+lookup('Causa Afastamento 3',"causa_afastamento_1.csv",sep_char:",")
+
+trim('Distritos SP')
+trim('Escolaridade após 2005')
+move_field('Escolaridade após 2005','Escolaridade apos 2005')
+lookup('Escolaridade apos 2005',"escolaridade.csv",sep_char:",")
+trim('Idade')
+
+lookup('IBGE Subsetor',"ibge.csv",sep_char:";")
+
+lookup('Ind Trab Intermitente',"sim_nao.csv",sep_char:",")
+lookup('Ind CEI Vinculado',"sim_nao.csv",sep_char:",")
+lookup('Ind Simples',"sim_nao.csv",sep_char:",")
+lookup('Ind Portador Defic',"sim_nao.csv",sep_char:",")
+lookup('Ind Trab Parcial',"sim_nao.csv",sep_char:",")
+lookup('Vínculo Ativo 31/12',"sim_nao.csv",sep_char:",")
+move_field('Faixa Remun Média (SM)','Faixa Remun Media (SM)')
+lookup('Faixa Remun Media (SM)',"faixa_remun_media_sm.csv",sep_char:",")
+lookup('Faixa Remun Dezem (SM)',"faixa_remun_dezem_sm.csv",sep_char:",")
+
+lookup('Mun Trab',"municipio.csv",sep_char:";")
+
+move_field('Município','Municipio')
+lookup('Municipio',"municipio.csv",sep_char:";")
+
+move_field('Raça Cor','Raca Cor')
+lookup('Raca Cor',"raca_cor.csv",sep_char:",")
+
+trim('Faixa Etária')
+lookup('Faixa Etária',"faixa_etaria.csv",sep_char:",")
+move_field('Faixa Etária','Faixa Etaria')
+
+trim('Faixa Hora Contrat')
+lookup('Faixa Hora Contrat',"faixa_hora_contrat.csv",sep_char:",")
+
+trim('Faixa Tempo Emprego')
+lookup('Faixa Tempo Emprego',"faixa_tempo_emprego.csv",sep_char:";")
+
+lookup('Nacionalidade',"nacionalidade.csv",sep_char:",")
+
+move_field('Natureza Jurídica','Natureza Juridica')
+lookup('Natureza Juridica',"natureza_juridica.csv",sep_char:",")
+
+trim('Sexo Trabalhador')
+lookup('Sexo Trabalhador',"sexo_trabalhador.csv",sep_char:",")
+
+trim('Tempo Emprego')
+
+trim('Qtd Hora Contr')
+
+trim('Qtd Dias Afastamento')
+
+lookup('Motivo Desligamento',"motivo_desligamento.csv",sep_char:",")
+
+lookup('Tamanho Estabelecimento',"tam_estabelecimento.csv",sep_char:",")
+
+move_field('Tipo Admissão','Tipo Admissao')
+lookup('Tipo Admissao',"tp_admissao.csv",sep_char:",")
+
+lookup('Tipo Defic',"tp_deficiencia.csv",sep_char:",")
+
+move_field('Tipo Vínculo','Tipo Vinculo')
+lookup('Tipo Vinculo',"tp_vinculo.csv",sep_char:",")
+
+copy_field('Vínculo Ativo 31/12','Vinculo Ativo 3112')
+lookup('Vinculo Ativo 3112',"sim_nao.csv",sep_char:",")
+
+#Bairros SP;
+#Bairros Fortaleza;
+#Bairros RJ;
+#Causa Afastamento 1;
+#Causa Afastamento 2;
+#Causa Afastamento 3;
+#Motivo Desligamento;
+#CBO Ocupação 2002;
+#CNAE 2.0 Classe;
+#CNAE 95 Classe;
+#Distritos SP;
+#Vínculo Ativo 31/12;
+#Faixa Etária;
+#Faixa Hora Contrat;
+#Faixa Remun Dezem (SM);
+#Faixa Remun Média (SM);
+#Faixa Tempo Emprego;
+#Escolaridade após 2005;
+#Qtd Hora Contr;
+#Idade;
+#Ind CEI Vinculado;
+#Ind Simples;
+#Mês Admissão;
+#Mês Desligamento;
+#Mun Trab;
+#Município;
+#Nacionalidade;
+#Natureza Jurídica;
+#Ind Portador Defic;
+#Qtd Dias Afastamento;
+#Raça Cor;
+#Regiões Adm DF;
+#Vl Remun Dezembro Nom;
+#Vl Remun Dezembro (SM);
+#Vl Remun Média Nom;
+#Vl Remun Média (SM);
+#CNAE 2.0 Subclasse;
+#Sexo Trabalhador;
+#Tamanho Estabelecimento;
+#Tempo Emprego;
+#Tipo Admissão;
+#Tipo Estab;
+#Tipo Estab;
+#Tipo Defic;
+#Tipo Vínculo;
+#IBGE Subsetor;
+#Vl Rem Janeiro SC;
+#Vl Rem Fevereiro SC;
+#Vl Rem Março SC;
+#Vl Rem Abril SC;
+#Vl Rem Maio SC;
+#Vl Rem Junho SC;
+#Vl Rem Julho SC;
+#Vl Rem Agosto SC;
+#Vl Rem Setembro SC;
+#Vl Rem Outubro SC;
+#Vl Rem Novembro SC;
+#Ano Chegada Brasil;
+#Ind Trab Intermitente;
+#Ind Trab Parcial
